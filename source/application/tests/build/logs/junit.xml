@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CodeIgniter Application Test Suite" tests="35" assertions="47" failures="0" errors="0" time="56.170212">
+    <testsuite name="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" tests="9" assertions="11" failures="0" errors="0" time="54.661126">
+      <testcase name="test_index" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="10" assertions="1" time="0.050002"/>
+      <testcase name="test_signup" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="16" assertions="3" time="27.945598"/>
+      <testcase name="test_activate" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="47" assertions="1" time="0.051003"/>
+      <testcase name="test_login" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="52" assertions="1" time="0.063004"/>
+      <testcase name="test_logout" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="63" assertions="1" time="0.045003"/>
+      <testcase name="test_retrieve" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="69" assertions="1" time="26.398510"/>
+      <testcase name="test_reset" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="88" assertions="1" time="0.049002"/>
+      <testcase name="test_method_404" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="93" assertions="1" time="0.043003"/>
+      <testcase name="test_APPPATH" class="Account_test" file="C:\wamp64\www\cinews\application\tests\controllers\Account_test.php" line="98" assertions="1" time="0.016001"/>
+    </testsuite>
+    <testsuite name="Home_test" file="C:\wamp64\www\cinews\application\tests\controllers\Home_test.php" tests="3" assertions="3" failures="0" errors="0" time="0.190011">
+      <testcase name="test_index" class="Home_test" file="C:\wamp64\www\cinews\application\tests\controllers\Home_test.php" line="9" assertions="1" time="0.134008"/>
+      <testcase name="test_method_404" class="Home_test" file="C:\wamp64\www\cinews\application\tests\controllers\Home_test.php" line="14" assertions="1" time="0.040002"/>
+      <testcase name="test_APPPATH" class="Home_test" file="C:\wamp64\www\cinews\application\tests\controllers\Home_test.php" line="19" assertions="1" time="0.016001"/>
+    </testsuite>
+    <testsuite name="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" tests="8" assertions="11" failures="0" errors="0" time="0.571032">
+      <testcase name="test_index" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="9" assertions="1" time="0.053003"/>
+      <testcase name="test_category" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="14" assertions="2" time="0.097006"/>
+      <testcase name="test_search" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="20" assertions="1" time="0.053003"/>
+      <testcase name="test_tag" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="25" assertions="2" time="0.096006"/>
+      <testcase name="test_rss" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="31" assertions="1" time="0.080004"/>
+      <testcase name="test_detail" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="36" assertions="2" time="0.131007"/>
+      <testcase name="test_method_404" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="45" assertions="1" time="0.042002"/>
+      <testcase name="test_APPPATH" class="News_test" file="C:\wamp64\www\cinews\application\tests\controllers\News_test.php" line="50" assertions="1" time="0.019001"/>
+    </testsuite>
+    <testsuite name="Post_test" file="C:\wamp64\www\cinews\application\tests\controllers\Post_test.php" tests="5" assertions="5" failures="0" errors="0" time="0.215014">
+      <testcase name="test_index" class="Post_test" file="C:\wamp64\www\cinews\application\tests\controllers\Post_test.php" line="9" assertions="1" time="0.046003"/>
+      <testcase name="test_add" class="Post_test" file="C:\wamp64\www\cinews\application\tests\controllers\Post_test.php" line="15" assertions="1" time="0.052003"/>
+      <testcase name="test_delete" class="Post_test" file="C:\wamp64\www\cinews\application\tests\controllers\Post_test.php" line="21" assertions="1" time="0.055004"/>
+      <testcase name="test_method_404" class="Post_test" file="C:\wamp64\www\cinews\application\tests\controllers\Post_test.php" line="28" assertions="1" time="0.046003"/>
+      <testcase name="test_APPPATH" class="Post_test" file="C:\wamp64\www\cinews\application\tests\controllers\Post_test.php" line="33" assertions="1" time="0.016001"/>
+    </testsuite>
+    <testsuite name="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" tests="6" assertions="10" failures="0" errors="0" time="0.319017">
+      <testcase name="test_add" class="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" line="17" assertions="1" time="0.046002"/>
+      <testcase name="test_update" class="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" line="24" assertions="2" time="0.072004"/>
+      <testcase name="test_get" class="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" line="35" assertions="2" time="0.052003"/>
+      <testcase name="test_get_all" class="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" line="44" assertions="1" time="0.049003"/>
+      <testcase name="test_get_by_category" class="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" line="51" assertions="2" time="0.050003"/>
+      <testcase name="test_get_by_idpost" class="Category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Category_model_test.php" line="62" assertions="2" time="0.050002"/>
+    </testsuite>
+    <testsuite name="Post_category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Post_category_model_test.php" tests="4" assertions="7" failures="0" errors="0" time="0.214012">
+      <testcase name="test_add" class="Post_category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Post_category_model_test.php" line="17" assertions="1" time="0.043002"/>
+      <testcase name="test_update" class="Post_category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Post_category_model_test.php" line="24" assertions="2" time="0.058004"/>
+      <testcase name="test_get_category_by_idpost" class="Post_category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Post_category_model_test.php" line="35" assertions="2" time="0.053003"/>
+      <testcase name="test_get_posts_by_idcategory" class="Post_category_model_test" file="C:\wamp64\www\cinews\application\tests\models\Post_category_model_test.php" line="46" assertions="2" time="0.060003"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

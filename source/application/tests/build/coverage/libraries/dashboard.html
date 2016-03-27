@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\wamp64\www\cinews\application/libraries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">C:\wamp64\www\cinews\application</a></li>
+        <li><a href="index.html">libraries</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Pdf.php.html#11">Pdf</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#9">User</a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="MY_Email.php.html#16">MY_Email</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Template.php.html#8">Template</a></td><td class="text-right">73%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MY_Email.php.html#16">MY_Email</a></td><td class="text-right">1186</td></tr>
+       <tr><td><a href="User.php.html#9">User</a></td><td class="text-right">107</td></tr>
+       <tr><td><a href="Template.php.html#8">Template</a></td><td class="text-right">14</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MY_Email.php.html#441"><abbr title="MY_Email::get_attachment_cid">get_attachment_cid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MY_Email.php.html#419"><abbr title="MY_Email::attachment_cid">attachment_cid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MY_Email.php.html#754"><abbr title="MY_Email::full_html">full_html</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Template.php.html#49"><abbr title="Template::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#87"><abbr title="User::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MY_Email.php.html#331"><abbr title="MY_Email::attach">attach</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#127"><abbr title="User::activate">activate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pdf.php.html#14"><abbr title="Pdf::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pdf.php.html#27"><abbr title="Pdf::generate">generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MY_Email.php.html#184"><abbr title="MY_Email::reply_to">reply_to</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MY_Email.php.html#243"><abbr title="MY_Email::cc">cc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MY_Email.php.html#271"><abbr title="MY_Email::bcc">bcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#62"><abbr title="User::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#100"><abbr title="User::isAdmin">isAdmin</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="MY_Email.php.html#613"><abbr title="MY_Email::set_wordwrap">set_wordwrap</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="User.php.html#50"><abbr title="User::logout">logout</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="User.php.html#75"><abbr title="User::id">id</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="MY_Email.php.html#920"><abbr title="MY_Email::_extract_name">_extract_name</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="User.php.html#142"><abbr title="User::notify">notify</abbr></a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="MY_Email.php.html#829"><abbr title="MY_Email::_get_alt_message">_get_alt_message</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="MY_Email.php.html#702"><abbr title="MY_Email::set_encoding">set_encoding</abbr></a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="MY_Email.php.html#143"><abbr title="MY_Email::from">from</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="User.php.html#35"><abbr title="User::login">login</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="MY_Email.php.html#627"><abbr title="MY_Email::set_wrapchars">set_wrapchars</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Template.php.html#67"><abbr title="Template::view">view</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="MY_Email.php.html#454"><abbr title="MY_Email::send">send</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Template.php.html#33"><abbr title="Template::get">get</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="MY_Email.php.html#726"><abbr title="MY_Email::set_smtp_debug">set_smtp_debug</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="MY_Email.php.html#85"><abbr title="MY_Email::initialize">initialize</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="MY_Email.php.html#299"><abbr title="MY_Email::subject">subject</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="MY_Email.php.html#683"><abbr title="MY_Email::set_priority">set_priority</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="MY_Email.php.html#34"><abbr title="MY_Email::__construct">__construct</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="MY_Email.php.html#569"><abbr title="MY_Email::set_protocol">set_protocol</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MY_Email.php.html#331"><abbr title="MY_Email::attach">attach</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="MY_Email.php.html#419"><abbr title="MY_Email::attachment_cid">attachment_cid</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="MY_Email.php.html#184"><abbr title="MY_Email::reply_to">reply_to</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="MY_Email.php.html#441"><abbr title="MY_Email::get_attachment_cid">get_attachment_cid</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="MY_Email.php.html#271"><abbr title="MY_Email::bcc">bcc</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="MY_Email.php.html#243"><abbr title="MY_Email::cc">cc</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="User.php.html#142"><abbr title="User::notify">notify</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MY_Email.php.html#143"><abbr title="MY_Email::from">from</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="User.php.html#100"><abbr title="User::isAdmin">isAdmin</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="MY_Email.php.html#920"><abbr title="MY_Email::_extract_name">_extract_name</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Template.php.html#67"><abbr title="Template::view">view</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MY_Email.php.html#454"><abbr title="MY_Email::send">send</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MY_Email.php.html#85"><abbr title="MY_Email::initialize">initialize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MY_Email.php.html#569"><abbr title="MY_Email::set_protocol">set_protocol</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#87"><abbr title="User::profile">profile</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#62"><abbr title="User::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#127"><abbr title="User::activate">activate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MY_Email.php.html#627"><abbr title="MY_Email::set_wrapchars">set_wrapchars</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="MY_Email.php.html#829"><abbr title="MY_Email::_get_alt_message">_get_alt_message</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MY_Email.php.html#702"><abbr title="MY_Email::set_encoding">set_encoding</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MY_Email.php.html#613"><abbr title="MY_Email::set_wordwrap">set_wordwrap</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="User.php.html#35"><abbr title="User::login">login</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MY_Email.php.html#683"><abbr title="MY_Email::set_priority">set_priority</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MY_Email.php.html#34"><abbr title="MY_Email::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Template.php.html#33"><abbr title="Template::get">get</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="MY_Email.php.html#726"><abbr title="MY_Email::set_smtp_debug">set_smtp_debug</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="User.php.html#50"><abbr title="User::logout">logout</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="User.php.html#75"><abbr title="User::id">id</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="MY_Email.php.html#299"><abbr title="MY_Email::subject">subject</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.3.0</a> using <a href="http://php.net/" target="_top">PHP 5.6.16</a> and <a href="https://phpunit.de/">PHPUnit 5.2.12</a> at Mon Mar 21 16:59:00 UTC 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,0,0,0,0,1,1,1,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([13,0,1,0,0,1,4,3,7,4,3,14], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[60.740740740741,132,"<a href=\"MY_Email.php.html#16\">MY_Email<\/a>"],[0,2,"<a href=\"Pdf.php.html#11\">Pdf<\/a>"],[73.333333333333,12,"<a href=\"Template.php.html#8\">Template<\/a>"],[54.545454545455,29,"<a href=\"User.php.html#9\">User<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[85.714285714286,4,"<a href=\"MY_Email.php.html#34\">MY_Email::__construct<\/a>"],[78.947368421053,6,"<a href=\"MY_Email.php.html#85\">MY_Email::initialize<\/a>"],[100,3,"<a href=\"MY_Email.php.html#116\">MY_Email::clear<\/a>"],[66.666666666667,7,"<a href=\"MY_Email.php.html#143\">MY_Email::from<\/a>"],[0,5,"<a href=\"MY_Email.php.html#184\">MY_Email::reply_to<\/a>"],[93.333333333333,4,"<a href=\"MY_Email.php.html#215\">MY_Email::to<\/a>"],[0,4,"<a href=\"MY_Email.php.html#243\">MY_Email::cc<\/a>"],[0,4,"<a href=\"MY_Email.php.html#271\">MY_Email::bcc<\/a>"],[83.333333333333,2,"<a href=\"MY_Email.php.html#299\">MY_Email::subject<\/a>"],[100,2,"<a href=\"MY_Email.php.html#315\">MY_Email::message<\/a>"],[0,11,"<a href=\"MY_Email.php.html#331\">MY_Email::attach<\/a>"],[0,5,"<a href=\"MY_Email.php.html#419\">MY_Email::attachment_cid<\/a>"],[0,4,"<a href=\"MY_Email.php.html#441\">MY_Email::get_attachment_cid<\/a>"],[73.684210526316,6,"<a href=\"MY_Email.php.html#454\">MY_Email::send<\/a>"],[100,2,"<a href=\"MY_Email.php.html#499\">MY_Email::set_useragent<\/a>"],[97.368421052632,7,"<a href=\"MY_Email.php.html#510\">MY_Email::set_mailer_engine<\/a>"],[87.5,6,"<a href=\"MY_Email.php.html#569\">MY_Email::set_protocol<\/a>"],[100,4,"<a href=\"MY_Email.php.html#596\">MY_Email::set_smtp_crypto<\/a>"],[42.857142857143,3,"<a href=\"MY_Email.php.html#613\">MY_Email::set_wordwrap<\/a>"],[71.428571428571,5,"<a href=\"MY_Email.php.html#627\">MY_Email::set_wrapchars<\/a>"],[100,3,"<a href=\"MY_Email.php.html#654\">MY_Email::set_mailtype<\/a>"],[100,3,"<a href=\"MY_Email.php.html#667\">MY_Email::set_charset<\/a>"],[85.714285714286,4,"<a href=\"MY_Email.php.html#683\">MY_Email::set_priority<\/a>"],[63.636363636364,4,"<a href=\"MY_Email.php.html#702\">MY_Email::set_encoding<\/a>"],[77.777777777778,3,"<a href=\"MY_Email.php.html#726\">MY_Email::set_smtp_debug<\/a>"],[100,1,"<a href=\"MY_Email.php.html#746\">MY_Email::valid_email<\/a>"],[0,1,"<a href=\"MY_Email.php.html#754\">MY_Email::full_html<\/a>"],[62.5,4,"<a href=\"MY_Email.php.html#829\">MY_Email::_get_alt_message<\/a>"],[90,4,"<a href=\"MY_Email.php.html#845\">MY_Email::_plain_text<\/a>"],[100,4,"<a href=\"MY_Email.php.html#885\">MY_Email::_set_config_option<\/a>"],[100,2,"<a href=\"MY_Email.php.html#903\">MY_Email::_copy_property_to_phpmailer<\/a>"],[57.142857142857,5,"<a href=\"MY_Email.php.html#920\">MY_Email::_extract_name<\/a>"],[0,1,"<a href=\"Pdf.php.html#14\">Pdf::__construct<\/a>"],[0,1,"<a href=\"Pdf.php.html#27\">Pdf::generate<\/a>"],[100,1,"<a href=\"Template.php.html#21\">Template::__construct<\/a>"],[75,3,"<a href=\"Template.php.html#33\">Template::get<\/a>"],[0,1,"<a href=\"Template.php.html#49\">Template::set<\/a>"],[72.222222222222,6,"<a href=\"Template.php.html#67\">Template::view<\/a>"],[100,1,"<a href=\"Template.php.html#92\">Template::alert<\/a>"],[100,1,"<a href=\"User.php.html#13\">User::__construct<\/a>"],[100,2,"<a href=\"User.php.html#21\">User::loggedIn<\/a>"],[71.428571428571,4,"<a href=\"User.php.html#35\">User::login<\/a>"],[50,2,"<a href=\"User.php.html#50\">User::logout<\/a>"],[0,2,"<a href=\"User.php.html#62\">User::get<\/a>"],[50,2,"<a href=\"User.php.html#75\">User::id<\/a>"],[0,2,"<a href=\"User.php.html#87\">User::profile<\/a>"],[16.666666666667,3,"<a href=\"User.php.html#100\">User::isAdmin<\/a>"],[100,1,"<a href=\"User.php.html#115\">User::create<\/a>"],[0,2,"<a href=\"User.php.html#127\">User::activate<\/a>"],[59.722222222222,8,"<a href=\"User.php.html#142\">User::notify<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

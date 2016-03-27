@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\wamp64\www\cinews\application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">C:\wamp64\www\cinews\application</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="libraries/Pdf.php.html#11">Pdf</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Post.php.html#8">Post</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#8">Profile_model</a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#8">Tag_model</a></td><td class="text-right">22%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#8">Post_model</a></td><td class="text-right">31%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#8">Account</a></td><td class="text-right">37%</td></tr>
+       <tr><td><a href="libraries/User.php.html#9">User</a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#8">Post_tag_model</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#16">MY_Email</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="controllers/News.php.html#8">News</a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="libraries/Template.php.html#8">Template</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="models/User_model.php.html#8">User_model</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="models/Category_model.php.html#8">Category_model</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="controllers/Home.php.html#8">Home</a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="models/Post_category_model.php.html#8">Post_category_model</a></td><td class="text-right">82%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="libraries/MY_Email.php.html#16">MY_Email</a></td><td class="text-right">1186</td></tr>
+       <tr><td><a href="controllers/Account.php.html#8">Account</a></td><td class="text-right">487</td></tr>
+       <tr><td><a href="controllers/Post.php.html#8">Post</a></td><td class="text-right">187</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#8">Tag_model</a></td><td class="text-right">136</td></tr>
+       <tr><td><a href="models/Post_model.php.html#8">Post_model</a></td><td class="text-right">109</td></tr>
+       <tr><td><a href="libraries/User.php.html#9">User</a></td><td class="text-right">107</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#8">Profile_model</a></td><td class="text-right">69</td></tr>
+       <tr><td><a href="controllers/News.php.html#8">News</a></td><td class="text-right">25</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#8">Post_tag_model</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/User_model.php.html#8">User_model</a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="libraries/Template.php.html#8">Template</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="models/Post_category_model.php.html#8">Post_category_model</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Category_model.php.html#8">Category_model</a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="controllers/Home.php.html#8">Home</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="libraries/Pdf.php.html#14"><abbr title="Pdf::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Pdf.php.html#27"><abbr title="Pdf::generate">generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#31"><abbr title="Profile_model::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Template.php.html#49"><abbr title="Template::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#754"><abbr title="MY_Email::full_html">full_html</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#44"><abbr title="Profile_model::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#441"><abbr title="MY_Email::get_attachment_cid">get_attachment_cid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#63"><abbr title="Tag_model::get_all">get_all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#84"><abbr title="Post_model::get_all">get_all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#72"><abbr title="Profile_model::get_user">get_user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#17"><abbr title="Profile_model::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/User.php.html#62"><abbr title="User::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#18"><abbr title="Post_model::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#33"><abbr title="Post_model::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#46"><abbr title="Post_model::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#99"><abbr title="Post_model::get_by_keyword">get_by_keyword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#116"><abbr title="Post_model::get_by_iduser">get_by_iduser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#12"><abbr title="Post_tag_model::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/User.php.html#87"><abbr title="User::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/User.php.html#127"><abbr title="User::activate">activate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#23"><abbr title="Post_tag_model::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#419"><abbr title="MY_Email::attachment_cid">attachment_cid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#18"><abbr title="Tag_model::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#331"><abbr title="MY_Email::attach">attach</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Post.php.html#31"><abbr title="Post::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#92"><abbr title="Tag_model::get_by_tag">get_by_tag</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Post.php.html#43"><abbr title="Post::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#184"><abbr title="MY_Email::reply_to">reply_to</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#243"><abbr title="MY_Email::cc">cc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#76"><abbr title="Tag_model::set_tag">set_tag</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#271"><abbr title="MY_Email::bcc">bcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/User_model.php.html#88"><abbr title="User_model::get_profile">get_profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Post.php.html#118"><abbr title="Post::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/News.php.html#140"><abbr title="News::pdf">pdf</abbr></a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#24"><abbr title="Account::index">index</abbr></a></td><td class="text-right">12%</td></tr>
+       <tr><td><a href="libraries/User.php.html#100"><abbr title="User::isAdmin">isAdmin</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#150"><abbr title="Account::activate">activate</abbr></a></td><td class="text-right">29%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#293"><abbr title="Account::reset">reset</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#37"><abbr title="Tag_model::update">update</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="controllers/News.php.html#78"><abbr title="News::search">search</abbr></a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#613"><abbr title="MY_Email::set_wordwrap">set_wordwrap</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#207"><abbr title="Account::login">login</abbr></a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="models/Post_category_model.php.html#17"><abbr title="Post_category_model::add">add</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="controllers/News.php.html#25"><abbr title="News::index">index</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="controllers/Post.php.html#15"><abbr title="Post::__construct">__construct</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="libraries/User.php.html#50"><abbr title="User::logout">logout</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="libraries/User.php.html#75"><abbr title="User::id">id</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#920"><abbr title="MY_Email::_extract_name">_extract_name</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="libraries/User.php.html#142"><abbr title="User::notify">notify</abbr></a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#829"><abbr title="MY_Email::_get_alt_message">_get_alt_message</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#702"><abbr title="MY_Email::set_encoding">set_encoding</abbr></a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#110"><abbr title="Account::signup">signup</abbr></a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#234"><abbr title="Account::logout">logout</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="models/Category_model.php.html#55"><abbr title="Category_model::get_all">get_all</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="models/User_model.php.html#18"><abbr title="User_model::add">add</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="models/Category_model.php.html#17"><abbr title="Category_model::add">add</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="models/User_model.php.html#33"><abbr title="User_model::update">update</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#143"><abbr title="MY_Email::from">from</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="libraries/User.php.html#35"><abbr title="User::login">login</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#627"><abbr title="MY_Email::set_wrapchars">set_wrapchars</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="libraries/Template.php.html#67"><abbr title="Template::view">view</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="controllers/Account.php.html#243"><abbr title="Account::retrieve">retrieve</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#454"><abbr title="MY_Email::send">send</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#58"><abbr title="Profile_model::get_by_iduser">get_by_iduser</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#56"><abbr title="Post_model::get">get</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="models/User_model.php.html#46"><abbr title="User_model::get">get</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="models/User_model.php.html#60"><abbr title="User_model::get_by_email">get_by_email</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="libraries/Template.php.html#33"><abbr title="Template::get">get</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="models/Category_model.php.html#67"><abbr title="Category_model::get_by_category">get_by_category</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="models/User_model.php.html#74"><abbr title="User_model::get_by_key">get_by_key</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#50"><abbr title="Tag_model::get">get</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="controllers/Home.php.html#23"><abbr title="Home::index">index</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#726"><abbr title="MY_Email::set_smtp_debug">set_smtp_debug</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#85"><abbr title="MY_Email::initialize">initialize</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="models/Category_model.php.html#43"><abbr title="Category_model::get">get</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="models/Post_model.php.html#70"><abbr title="Post_model::get_posts">get_posts</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#299"><abbr title="MY_Email::subject">subject</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#34"><abbr title="MY_Email::__construct">__construct</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#683"><abbr title="MY_Email::set_priority">set_priority</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#569"><abbr title="MY_Email::set_protocol">set_protocol</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="models/Post_category_model.php.html#48"><abbr title="Post_category_model::get_category_by_idpost">get_category_by_idpost</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#30"><abbr title="Post_tag_model::get_tags_by_idpost">get_tags_by_idpost</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="libraries/MY_Email.php.html#331"><abbr title="MY_Email::attach">attach</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="controllers/Account.php.html#24"><abbr title="Account::index">index</abbr></a></td><td class="text-right">76</td></tr>
+       <tr><td><a href="controllers/Post.php.html#43"><abbr title="Post::add">add</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="controllers/Account.php.html#150"><abbr title="Account::activate">activate</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#419"><abbr title="MY_Email::attachment_cid">attachment_cid</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#184"><abbr title="MY_Email::reply_to">reply_to</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="controllers/Account.php.html#293"><abbr title="Account::reset">reset</abbr></a></td><td class="text-right">29</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#271"><abbr title="MY_Email::bcc">bcc</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#441"><abbr title="MY_Email::get_attachment_cid">get_attachment_cid</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#243"><abbr title="MY_Email::cc">cc</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="controllers/Post.php.html#118"><abbr title="Post::delete">delete</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#18"><abbr title="Tag_model::add">add</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#12"><abbr title="Post_tag_model::add">add</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/User.php.html#142"><abbr title="User::notify">notify</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#76"><abbr title="Tag_model::set_tag">set_tag</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="controllers/Account.php.html#207"><abbr title="Account::login">login</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#143"><abbr title="MY_Email::from">from</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="libraries/User.php.html#100"><abbr title="User::isAdmin">isAdmin</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="controllers/News.php.html#78"><abbr title="News::search">search</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#920"><abbr title="MY_Email::_extract_name">_extract_name</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Template.php.html#67"><abbr title="Template::view">view</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#454"><abbr title="MY_Email::send">send</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#85"><abbr title="MY_Email::initialize">initialize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/Account.php.html#110"><abbr title="Account::signup">signup</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#569"><abbr title="MY_Email::set_protocol">set_protocol</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_model.php.html#33"><abbr title="Post_model::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/User.php.html#127"><abbr title="User::activate">activate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_category_model.php.html#17"><abbr title="Post_category_model::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_model.php.html#18"><abbr title="Post_model::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_model.php.html#84"><abbr title="Post_model::get_all">get_all</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#31"><abbr title="Profile_model::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#72"><abbr title="Profile_model::get_user">get_user</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#63"><abbr title="Tag_model::get_all">get_all</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#92"><abbr title="Tag_model::get_by_tag">get_by_tag</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#44"><abbr title="Profile_model::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#17"><abbr title="Profile_model::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_model.php.html#116"><abbr title="Post_model::get_by_iduser">get_by_iduser</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#23"><abbr title="Post_tag_model::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Post_model.php.html#99"><abbr title="Post_model::get_by_keyword">get_by_keyword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/User.php.html#62"><abbr title="User::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/User.php.html#87"><abbr title="User::profile">profile</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#627"><abbr title="MY_Email::set_wrapchars">set_wrapchars</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="controllers/Account.php.html#243"><abbr title="Account::retrieve">retrieve</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#829"><abbr title="MY_Email::_get_alt_message">_get_alt_message</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#702"><abbr title="MY_Email::set_encoding">set_encoding</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="controllers/News.php.html#140"><abbr title="News::pdf">pdf</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#613"><abbr title="MY_Email::set_wordwrap">set_wordwrap</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="libraries/User.php.html#35"><abbr title="User::login">login</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#34"><abbr title="MY_Email::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#683"><abbr title="MY_Email::set_priority">set_priority</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#37"><abbr title="Tag_model::update">update</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="libraries/Template.php.html#33"><abbr title="Template::get">get</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#726"><abbr title="MY_Email::set_smtp_debug">set_smtp_debug</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="models/Post_tag_model.php.html#30"><abbr title="Post_tag_model::get_tags_by_idpost">get_tags_by_idpost</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="models/Post_category_model.php.html#48"><abbr title="Post_category_model::get_category_by_idpost">get_category_by_idpost</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="controllers/News.php.html#25"><abbr title="News::index">index</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="libraries/User.php.html#50"><abbr title="User::logout">logout</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="controllers/Post.php.html#15"><abbr title="Post::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="libraries/User.php.html#75"><abbr title="User::id">id</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Category_model.php.html#55"><abbr title="Category_model::get_all">get_all</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/User_model.php.html#33"><abbr title="User_model::update">update</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Category_model.php.html#17"><abbr title="Category_model::add">add</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/User_model.php.html#18"><abbr title="User_model::add">add</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/User_model.php.html#60"><abbr title="User_model::get_by_email">get_by_email</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/User_model.php.html#74"><abbr title="User_model::get_by_key">get_by_key</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/User_model.php.html#46"><abbr title="User_model::get">get</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Category_model.php.html#67"><abbr title="Category_model::get_by_category">get_by_category</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Profile_model.php.html#58"><abbr title="Profile_model::get_by_iduser">get_by_iduser</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Post_model.php.html#56"><abbr title="Post_model::get">get</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Tag_model.php.html#50"><abbr title="Tag_model::get">get</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="controllers/Home.php.html#23"><abbr title="Home::index">index</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Category_model.php.html#43"><abbr title="Category_model::get">get</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="models/Post_model.php.html#70"><abbr title="Post_model::get_posts">get_posts</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="libraries/MY_Email.php.html#299"><abbr title="MY_Email::subject">subject</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.3.0</a> using <a href="http://php.net/" target="_top">PHP 5.6.16</a> and <a href="https://phpunit.de/">PHPUnit 5.2.12</a> at Mon Mar 21 16:59:00 UTC 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.min.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,1,1,1,2,0,1,3,2,3,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([33,0,3,1,3,2,7,9,16,8,7,26], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[37.823834196891,43,"<a href=\"controllers\/Account.php.html#8\">Account<\/a>"],[81.818181818182,3,"<a href=\"controllers\/Home.php.html#8\">Home<\/a>"],[61.333333333333,14,"<a href=\"controllers\/News.php.html#8\">News<\/a>"],[4,14,"<a href=\"controllers\/Post.php.html#8\">Post<\/a>"],[60.740740740741,132,"<a href=\"libraries\/MY_Email.php.html#16\">MY_Email<\/a>"],[0,2,"<a href=\"libraries\/Pdf.php.html#11\">Pdf<\/a>"],[73.333333333333,12,"<a href=\"libraries\/Template.php.html#8\">Template<\/a>"],[54.545454545455,29,"<a href=\"libraries\/User.php.html#9\">User<\/a>"],[80,11,"<a href=\"models\/Category_model.php.html#8\">Category_model<\/a>"],[82.142857142857,12,"<a href=\"models\/Post_category_model.php.html#8\">Post_category_model<\/a>"],[31.578947368421,17,"<a href=\"models\/Post_model.php.html#8\">Post_model<\/a>"],[60.714285714286,12,"<a href=\"models\/Post_tag_model.php.html#8\">Post_tag_model<\/a>"],[15.789473684211,10,"<a href=\"models\/Profile_model.php.html#8\">Profile_model<\/a>"],[22.222222222222,16,"<a href=\"models\/Tag_model.php.html#8\">Tag_model<\/a>"],[76.470588235294,16,"<a href=\"models\/User_model.php.html#8\">User_model<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"controllers\/Account.php.html#13\">Account::__construct<\/a>"],[12.5,10,"<a href=\"controllers\/Account.php.html#24\">Account::index<\/a>"],[63.636363636364,5,"<a href=\"controllers\/Account.php.html#110\">Account::signup<\/a>"],[29.411764705882,8,"<a href=\"controllers\/Account.php.html#150\">Account::activate<\/a>"],[46.153846153846,5,"<a href=\"controllers\/Account.php.html#207\">Account::login<\/a>"],[66.666666666667,1,"<a href=\"controllers\/Account.php.html#234\">Account::logout<\/a>"],[72.413793103448,5,"<a href=\"controllers\/Account.php.html#243\">Account::retrieve<\/a>"],[30.30303030303,8,"<a href=\"controllers\/Account.php.html#293\">Account::reset<\/a>"],[100,1,"<a href=\"controllers\/Home.php.html#14\">Home::__construct<\/a>"],[77.777777777778,2,"<a href=\"controllers\/Home.php.html#23\">Home::index<\/a>"],[100,1,"<a href=\"controllers\/News.php.html#15\">News::__construct<\/a>"],[50,2,"<a href=\"controllers\/News.php.html#25\">News::index<\/a>"],[100,1,"<a href=\"controllers\/News.php.html#45\">News::category<\/a>"],[100,1,"<a href=\"controllers\/News.php.html#62\">News::tag<\/a>"],[38.461538461538,4,"<a href=\"controllers\/News.php.html#78\">News::search<\/a>"],[100,1,"<a href=\"controllers\/News.php.html#101\">News::rss<\/a>"],[91.666666666667,2,"<a href=\"controllers\/News.php.html#118\">News::detail<\/a>"],[11.764705882353,2,"<a href=\"controllers\/News.php.html#140\">News::pdf<\/a>"],[50,2,"<a href=\"controllers\/Post.php.html#15\">Post::__construct<\/a>"],[0,1,"<a href=\"controllers\/Post.php.html#31\">Post::index<\/a>"],[0,7,"<a href=\"controllers\/Post.php.html#43\">Post::add<\/a>"],[0,4,"<a href=\"controllers\/Post.php.html#118\">Post::delete<\/a>"],[85.714285714286,4,"<a href=\"libraries\/MY_Email.php.html#34\">MY_Email::__construct<\/a>"],[78.947368421053,6,"<a href=\"libraries\/MY_Email.php.html#85\">MY_Email::initialize<\/a>"],[100,3,"<a href=\"libraries\/MY_Email.php.html#116\">MY_Email::clear<\/a>"],[66.666666666667,7,"<a href=\"libraries\/MY_Email.php.html#143\">MY_Email::from<\/a>"],[0,5,"<a href=\"libraries\/MY_Email.php.html#184\">MY_Email::reply_to<\/a>"],[93.333333333333,4,"<a href=\"libraries\/MY_Email.php.html#215\">MY_Email::to<\/a>"],[0,4,"<a href=\"libraries\/MY_Email.php.html#243\">MY_Email::cc<\/a>"],[0,4,"<a href=\"libraries\/MY_Email.php.html#271\">MY_Email::bcc<\/a>"],[83.333333333333,2,"<a href=\"libraries\/MY_Email.php.html#299\">MY_Email::subject<\/a>"],[100,2,"<a href=\"libraries\/MY_Email.php.html#315\">MY_Email::message<\/a>"],[0,11,"<a href=\"libraries\/MY_Email.php.html#331\">MY_Email::attach<\/a>"],[0,5,"<a href=\"libraries\/MY_Email.php.html#419\">MY_Email::attachment_cid<\/a>"],[0,4,"<a href=\"libraries\/MY_Email.php.html#441\">MY_Email::get_attachment_cid<\/a>"],[73.684210526316,6,"<a href=\"libraries\/MY_Email.php.html#454\">MY_Email::send<\/a>"],[100,2,"<a href=\"libraries\/MY_Email.php.html#499\">MY_Email::set_useragent<\/a>"],[97.368421052632,7,"<a href=\"libraries\/MY_Email.php.html#510\">MY_Email::set_mailer_engine<\/a>"],[87.5,6,"<a href=\"libraries\/MY_Email.php.html#569\">MY_Email::set_protocol<\/a>"],[100,4,"<a href=\"libraries\/MY_Email.php.html#596\">MY_Email::set_smtp_crypto<\/a>"],[42.857142857143,3,"<a href=\"libraries\/MY_Email.php.html#613\">MY_Email::set_wordwrap<\/a>"],[71.428571428571,5,"<a href=\"libraries\/MY_Email.php.html#627\">MY_Email::set_wrapchars<\/a>"],[100,3,"<a href=\"libraries\/MY_Email.php.html#654\">MY_Email::set_mailtype<\/a>"],[100,3,"<a href=\"libraries\/MY_Email.php.html#667\">MY_Email::set_charset<\/a>"],[85.714285714286,4,"<a href=\"libraries\/MY_Email.php.html#683\">MY_Email::set_priority<\/a>"],[63.636363636364,4,"<a href=\"libraries\/MY_Email.php.html#702\">MY_Email::set_encoding<\/a>"],[77.777777777778,3,"<a href=\"libraries\/MY_Email.php.html#726\">MY_Email::set_smtp_debug<\/a>"],[100,1,"<a href=\"libraries\/MY_Email.php.html#746\">MY_Email::valid_email<\/a>"],[0,1,"<a href=\"libraries\/MY_Email.php.html#754\">MY_Email::full_html<\/a>"],[62.5,4,"<a href=\"libraries\/MY_Email.php.html#829\">MY_Email::_get_alt_message<\/a>"],[90,4,"<a href=\"libraries\/MY_Email.php.html#845\">MY_Email::_plain_text<\/a>"],[100,4,"<a href=\"libraries\/MY_Email.php.html#885\">MY_Email::_set_config_option<\/a>"],[100,2,"<a href=\"libraries\/MY_Email.php.html#903\">MY_Email::_copy_property_to_phpmailer<\/a>"],[57.142857142857,5,"<a href=\"libraries\/MY_Email.php.html#920\">MY_Email::_extract_name<\/a>"],[0,1,"<a href=\"libraries\/Pdf.php.html#14\">Pdf::__construct<\/a>"],[0,1,"<a href=\"libraries\/Pdf.php.html#27\">Pdf::generate<\/a>"],[100,1,"<a href=\"libraries\/Template.php.html#21\">Template::__construct<\/a>"],[75,3,"<a href=\"libraries\/Template.php.html#33\">Template::get<\/a>"],[0,1,"<a href=\"libraries\/Template.php.html#49\">Template::set<\/a>"],[72.222222222222,6,"<a href=\"libraries\/Template.php.html#67\">Template::view<\/a>"],[100,1,"<a href=\"libraries\/Template.php.html#92\">Template::alert<\/a>"],[100,1,"<a href=\"libraries\/User.php.html#13\">User::__construct<\/a>"],[100,2,"<a href=\"libraries\/User.php.html#21\">User::loggedIn<\/a>"],[71.428571428571,4,"<a href=\"libraries\/User.php.html#35\">User::login<\/a>"],[50,2,"<a href=\"libraries\/User.php.html#50\">User::logout<\/a>"],[0,2,"<a href=\"libraries\/User.php.html#62\">User::get<\/a>"],[50,2,"<a href=\"libraries\/User.php.html#75\">User::id<\/a>"],[0,2,"<a href=\"libraries\/User.php.html#87\">User::profile<\/a>"],[16.666666666667,3,"<a href=\"libraries\/User.php.html#100\">User::isAdmin<\/a>"],[100,1,"<a href=\"libraries\/User.php.html#115\">User::create<\/a>"],[0,2,"<a href=\"libraries\/User.php.html#127\">User::activate<\/a>"],[59.722222222222,8,"<a href=\"libraries\/User.php.html#142\">User::notify<\/a>"],[66.666666666667,2,"<a href=\"models\/Category_model.php.html#17\">Category_model::add<\/a>"],[100,2,"<a href=\"models\/Category_model.php.html#31\">Category_model::update<\/a>"],[80,2,"<a href=\"models\/Category_model.php.html#43\">Category_model::get<\/a>"],[66.666666666667,2,"<a href=\"models\/Category_model.php.html#55\">Category_model::get_all<\/a>"],[75,2,"<a href=\"models\/Category_model.php.html#67\">Category_model::get_by_category<\/a>"],[100,1,"<a href=\"models\/Category_model.php.html#81\">Category_model::get_by_idpost<\/a>"],[50,4,"<a href=\"models\/Post_category_model.php.html#17\">Post_category_model::add<\/a>"],[100,2,"<a href=\"models\/Post_category_model.php.html#35\">Post_category_model::update<\/a>"],[88.888888888889,3,"<a href=\"models\/Post_category_model.php.html#48\">Post_category_model::get_category_by_idpost<\/a>"],[90,3,"<a href=\"models\/Post_category_model.php.html#66\">Post_category_model::get_posts_by_idcategory<\/a>"],[0,2,"<a href=\"models\/Post_model.php.html#18\">Post_model::add<\/a>"],[0,2,"<a href=\"models\/Post_model.php.html#33\">Post_model::update<\/a>"],[0,1,"<a href=\"models\/Post_model.php.html#46\">Post_model::delete<\/a>"],[75,2,"<a href=\"models\/Post_model.php.html#56\">Post_model::get<\/a>"],[83.333333333333,2,"<a href=\"models\/Post_model.php.html#70\">Post_model::get_posts<\/a>"],[0,2,"<a href=\"models\/Post_model.php.html#84\">Post_model::get_all<\/a>"],[0,2,"<a href=\"models\/Post_model.php.html#99\">Post_model::get_by_keyword<\/a>"],[0,2,"<a href=\"models\/Post_model.php.html#116\">Post_model::get_by_iduser<\/a>"],[100,1,"<a href=\"models\/Post_model.php.html#131\">Post_model::get_by_idtag<\/a>"],[100,1,"<a href=\"models\/Post_model.php.html#142\">Post_model::get_by_idcategory<\/a>"],[0,4,"<a href=\"models\/Post_tag_model.php.html#12\">Post_tag_model::add<\/a>"],[0,2,"<a href=\"models\/Post_tag_model.php.html#23\">Post_tag_model::update<\/a>"],[88.888888888889,3,"<a href=\"models\/Post_tag_model.php.html#30\">Post_tag_model::get_tags_by_idpost<\/a>"],[90,3,"<a href=\"models\/Post_tag_model.php.html#43\">Post_tag_model::get_posts_by_idtag<\/a>"],[0,2,"<a href=\"models\/Profile_model.php.html#17\">Profile_model::add<\/a>"],[0,2,"<a href=\"models\/Profile_model.php.html#31\">Profile_model::update<\/a>"],[0,2,"<a href=\"models\/Profile_model.php.html#44\">Profile_model::get<\/a>"],[75,2,"<a href=\"models\/Profile_model.php.html#58\">Profile_model::get_by_iduser<\/a>"],[0,2,"<a href=\"models\/Profile_model.php.html#72\">Profile_model::get_user<\/a>"],[0,4,"<a href=\"models\/Tag_model.php.html#18\">Tag_model::add<\/a>"],[33.333333333333,2,"<a href=\"models\/Tag_model.php.html#37\">Tag_model::update<\/a>"],[75,2,"<a href=\"models\/Tag_model.php.html#50\">Tag_model::get<\/a>"],[0,2,"<a href=\"models\/Tag_model.php.html#63\">Tag_model::get_all<\/a>"],[0,3,"<a href=\"models\/Tag_model.php.html#76\">Tag_model::set_tag<\/a>"],[0,2,"<a href=\"models\/Tag_model.php.html#92\">Tag_model::get_by_tag<\/a>"],[100,1,"<a href=\"models\/Tag_model.php.html#107\">Tag_model::get_by_idpost<\/a>"],[66.666666666667,2,"<a href=\"models\/User_model.php.html#18\">User_model::add<\/a>"],[66.666666666667,2,"<a href=\"models\/User_model.php.html#33\">User_model::update<\/a>"],[75,2,"<a href=\"models\/User_model.php.html#46\">User_model::get<\/a>"],[75,2,"<a href=\"models\/User_model.php.html#60\">User_model::get_by_email<\/a>"],[75,2,"<a href=\"models\/User_model.php.html#74\">User_model::get_by_key<\/a>"],[0,1,"<a href=\"models\/User_model.php.html#88\">User_model::get_profile<\/a>"],[92.857142857143,5,"<a href=\"models\/User_model.php.html#99\">User_model::login<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
